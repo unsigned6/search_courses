@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  get 'courses/index'
+
+  get 'greeter/hello'
+  get 'greeter/bb' => 'greeter#bye'
+
+  get 'rosetta/monument'
+
+  root 'courses#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
